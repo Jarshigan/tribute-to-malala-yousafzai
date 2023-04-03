@@ -8,28 +8,92 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+
 </head>
 
-<body>
-    <header>
-        <h1>Tribute to Malala Yousafzai</h1>
+<body style="text-align: center;  margin: 0; background-color: #a6a8a6;">
+    <header style="background-color:#333; color: whitesmoke;">
+        <h1 style="font-size: 300%;">Tribute to Malala Yousafzai</h1>
     </header>
     <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://assets.teenvogue.com/photos/5df686387e1c200008b8e255/master/w_1600%2Cc_limit/Malala_Final-Cover.jpg"
+                    style="width:25%">
+                <div class="text">Malala Yousafzai</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="image.jpg"
+                    style="width:25%">
+                <div class="text">Malala Yousafzai</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://media.vanityfair.com/photos/5f2aeb10f2d929c7c4eb8c9a/master/w_2560%2Cc_limit/malala-op-ed-lede.jpg"
+                    style="width:25%">
+                <div class="text">Malala Yousafzai</div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
         <figure>
-            <img src="https://media.vanityfair.com/photos/5f2aeb10f2d929c7c4eb8c9a/master/w_2560%2Cc_limit/malala-op-ed-lede.jpg"
-                alt="Trulli" style="width:25%">
-            <figcaption>Malala Yousafzai, 1997</figcaption>
+
+            <figcaption style="font-size: 180%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: italic;">Malala Yousafzai, 1997</figcaption>
         </figure>
-        <p>Malala Yousafzai is a Pakistani activist for women's education and the youngest Nobel Prize laureate.
-            She gained international attention in 2012 after surviving an assassination attempt by the Taliban for her
+        <p style="margin-left: 15%; margin-right: 15%; text-align: justify; font-size: 120%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Malala Yousafzai is a Pakistani activist for women's education and the youngest Nobel Prize laureate.
+            She gained international attention in 2012 after surviving an assassination attempt by the Taliban for
+            her
             advocacy of girls' education.
-            Malala founded the Malala Fund, which works to secure education for girls in underprivileged communities.
-            She has authored two books, including the international bestseller "I Am Malala: The Story of the Girl Who
+            Malala founded the Malala Fund, which works to secure education for girls in underprivileged
+            communities.
+            She has authored two books, including the international bestseller "I Am Malala: The Story of the Girl
+            Who
             Stood Up for Education and Was Shot by the Taliban."</p>
-        <p>Malala continues to be a powerful voice for human rights and education, and has been recognized with numerous
+        <p style="margin-left: 15%; margin-right: 15%; text-align: justify; font-size: 120%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Malala continues to be a powerful voice for human rights and education, and has been recognized with
+            numerous
             awards and honors for her activism.</p>
     </main>
-    <footer>Created by <a href="https://github.com/Jarshigan">Jarshigan</a></footer>
+    <footer style="  position: fixed;
+    bottom: 0;
+    width: 10%;
+    background-color: rgb(91, 88, 94);
+    text-align: left;
+    padding: 10px; color: whitesmoke;">Created by <a href="https://github.com/Jarshigan">Jarshigan</a></footer>
 </body>
 
 </html>
