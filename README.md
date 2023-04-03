@@ -1,2 +1,2 @@
-# tribute-to-malala-yousafzai
-tribute-to-malala-yousafzai-for-learning
+# Tribute to Malala Yousafzai
+Tribute to Malala Yousafzai
