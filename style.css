@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+     margin: 0; 
+     background-color: #a6a8a6;
+}
+
+header{
+    background-color:#333; 
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 300%;
+}
+
+img{
+    width:25%;
+}
+
+div.class{
+    text-align:center;
+}
+
+figcaption{
+    font-size: 180%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-style: italic;
+}
+
+p{
+    margin-left: 15%; 
+    margin-right: 15%; 
+    text-align: justify; 
+    font-size: 120%; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif; font-size: 100%;
+bottom: 0;
+width: 20%;
+text-align: left;
+ color: rgb(255, 255, 255);
+}
+
+a{
+    color: blue;
+}
